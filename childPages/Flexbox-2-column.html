@@ -4,12 +4,12 @@
     <!-- Used by Key Board-->
     <meta charset="utf-8">
 
-    <title>Laying out DIVs Example</title>
+    <title>Flexbox</title>
 
     <!-- Used by Broswer or Google Search-->
-    <meta name="author" content="Nolan Vanderham">
-    <meta name="description" content="Example about organizing DIVs">
-    <meta name="keywords" content="laying, divs">
+    <meta name="author" content="Nolan Vanderham/FusedAlmond">
+    <meta name="description" content="Flexbox & Sematic Tags">
+    <meta name="keywords" content="Flexbox">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
 
@@ -25,16 +25,32 @@
     <!-- Already specified in the charset above-->
 
     <style>
-    /* This is a style comment */
-      div {border: thin dotted red;} 
-  </style>
+      div {border: thin dotted red;}
+      * { box-sizing: border-box;}
+      .header {
+        border: 1px solid red;
+        padding: 15px;
+      }
+      .menu {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .main {
+        width: 75%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red
+      }
+    </style>
 
   </head>
   <body>
-    <header>Laying out DIVs Example</header>
+    <header>Flexbox: INDEX as a Flexbox</header>
     <nav></nav>
     <aside></aside>
-    <section><article>Open in ATOM to see changes</article></section>
+    <section><article></article></section>
   </body>
   <footer>
     <blockquote cite="https://www.brainyquote.com/quotes/mitch_kapor_163583">
